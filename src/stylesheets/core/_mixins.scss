@@ -1,0 +1,6 @@
+
+@mixin web {
+    @media all and (min-width: $web) {
+      @content;
+    }
+  }

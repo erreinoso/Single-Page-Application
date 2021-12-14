@@ -1,0 +1,28 @@
+@import './core/_variables';
+@import './core/_mixins';
+
+.header {
+    padding:29px,39px;
+    display: flex;
+    justify-content: space-evenly;
+    min-height: rem(180);
+    &__logo{
+        width: rem(102);
+        align-self: center;
+    }
+    &__input{
+        display: inline-flex;
+        width: rem(271);
+        height: rem(30);
+        padding:rem(4);
+        border-radius: rem(14);
+        background-color: $color-background;
+        outline: none;
+        align-self: center;
+        align-items: center;
+        input{
+            all:unset;
+            background:none;
+        }
+    }
+}

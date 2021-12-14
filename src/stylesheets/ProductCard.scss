@@ -1,0 +1,78 @@
+@import './core/_variables';
+@import './core/_mixins';
+
+.product{
+    border:1px solid $color-medium-light;
+    position: relative;
+      &__corner{    
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 101px 161px 0 0;
+        border-color: $color-light transparent transparent transparent;
+        &--price{
+            position: relative;
+            top:rem(-60)
+        }
+    }
+    &__users{
+        display: none;
+    }
+    &__text{
+        height: rem(100);
+        font-weight: $font-weight-regular;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &--title{
+            font-size: $font-medium-large;
+            color: $color-dark;
+            font-family: $font-primary;
+            text-align: center;
+        }
+        &--author{
+            font-size: $font-medium;
+            font-family: $font-secondary; // !!!!!!!!!!!!!!!!!!!!!!!!!!!
+            text-align: center;
+            span{            
+                color: $color-medium-light;
+            }
+        }
+    }
+    &:hover &__users{
+        display : block;
+        position: absolute;
+        padding:rem(20);
+        z-index: 1;
+        top: 0;
+        right: 0;
+
+    &--likeButton
+        {   
+            background: none;
+            outline: none;
+            border: none;
+        }
+        &--likeButton.liked
+        { 
+            filter: brightness(0.7) sepia(1) hue-rotate(
+                177deg) saturate(4);
+        }
+     
+
+     &--likesCount{
+        text-align: center;
+     }
+     }   
+     &:hover &__image:before{
+        content: '';
+        position:absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background: linear-gradient(to top, rgb(255 255 255 / 0%) 20%, rgb(89, 89, 89) 100%);   
+     }
+  }
