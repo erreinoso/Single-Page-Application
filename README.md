@@ -20,6 +20,9 @@ Para arrancar la api mock simplemente:
 
 `npm run mocks`
 
+`npm start`
+
+
 ## Endpoints
 
 ### `GET http://localhost:3100/images`

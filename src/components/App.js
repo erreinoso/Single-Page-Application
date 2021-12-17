@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../stylesheets/App.scss';
-import ProductList from './ProductList';
 import Header from './Header';
+import ProductList from './ProductList';
 
 const App = () => {
   const [products, setProducts] = useState([]);

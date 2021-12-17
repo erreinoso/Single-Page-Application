@@ -1,3 +1,3 @@
 @function rem($pixels) {
-    @return calc($pixels / $font-regular)
+    @return calc($pixels / $font-regular)+rem
   }

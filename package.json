@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.1.0",
@@ -40,21 +39,6 @@
     ]
   },
   "devDependencies": {
-    "@mocks-server/main": "^2.6.0",
-    "eslint": "*",
-    "prettier": "^2.5.1"
-  },
-  "description": "Technical test",
-  "main": "mocks.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/erreinoso/front-end-test-Samy.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/erreinoso/front-end-test-Samy/issues"
-  },
-  "homepage": "https://github.com/erreinoso/front-end-test-Samy#readme"
+    "@mocks-server/main": "^2.6.0"
+  }
 }

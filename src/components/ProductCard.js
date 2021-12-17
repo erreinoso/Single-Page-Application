@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import '../stylesheets/ProductCard.scss';
 import LikeIcon from '../images/like.png';
 import RepostIcon from '../images/repost.png';
