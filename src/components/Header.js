@@ -1,17 +1,11 @@
 import React from 'react';
-import Logo from '../images/logo.png';
+import Logo from '../images/logo-s.png';
 import '../stylesheets/Header.scss';
-
 
 const Header = (props) => {
     const handleFilter = (ev) => {
       props.handleFilter(ev.currentTarget.value);
     };
-  
-    // const handleContentClick = (ev) => {
-    //   ev.preventDefault();
-    // };
-  
     return (
         <header className="header">
           <div className="header__logo">
@@ -22,7 +16,6 @@ const Header = (props) => {
           />
           </div>
           <div className="header__input">
-            {/* <form className="header__input" onSubmit={handleContentClick}> */}
                 <span className="material-icons">search</span>
                 <input
                 type="text"
@@ -32,7 +25,6 @@ const Header = (props) => {
                 value={props.filterProduct}
                 onChange={handleFilter}
               />
-          {/* </form> */}
         </div>
       </header>
     );

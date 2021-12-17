@@ -2,19 +2,27 @@
 @import './core/_mixins';
 
 main{
-    padding:rem(40);
-    max-width: rem(900);
-    margin: auto;
+    padding:rem(29);
+    background-color: $color-background;
+    display: flex;
+    justify-content: center;
+    @include web {
+        padding:rem(40);
+    }
 }
-.productList {
+
+.product--list {
+    max-width: rem(900);
     display: grid;
     grid-template-columns: 1fr ;
     grid-row-gap: rem(20);
     grid-column-gap: rem(20);
-
     @include web {
         grid-template-columns: 1fr 1fr;
       }
   }
 
-  
+.product--empty {
+    font-size:$font-medium-regular;
+    font-family: $font-title;
+}

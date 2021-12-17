@@ -1,32 +1,30 @@
 //COLORS
-$color-background: #F6F6F6;
-// $color-medium: #6b6b6b;//NEW VARIABLE CREATD BY AMANDA
+$color-background: #F6F6F6; 
+$color-background-dark: #949494;
+$color-border: #E1E1E1;
 $color-light: #ffffff;
 $color-medium-light:#c2c2bd; 
+$color-medium:#B6B6B4; 
 $color-dark: #000000;
-
-// $color-medium-extralight: #d8d8d8;
-// $color-secondary-dark: #e17334;
-// $color-secondary-light: #f9f4dc;
-// $color-form-placeholder: #c5c5c5;
-// $color-twitter-blue: #00a0f5;
-
-//PALETTES
-// $color-primary-dark: #114e4e;
-// $color-primary-medium: #438792;
-// $color-primary-light: #a2deaf;
+$color-icon-repost: #E4E5DF;
+$color-icon-liked: #83f3c6; 
+$filter-unliked-mobile: invert(79%) sepia(6%) saturate(58%) hue-rotate(22deg) brightness(92%) contrast(90%);
+$filter-liked:invert(83%) sepia(83%) saturate(254%) hue-rotate(78deg) brightness(96%) contrast(98%);
+$filter-unliked-web: invert(100%) sepia(0%) saturate(0%) hue-rotate(185deg) brightness(105%) contrast(101%);
+$hover-gradient:linear-gradient(to top, rgb(255 255 255 / 0%) 20%, rgb(89, 89, 89) 100%);   
 
 //FONTS
 $font-regular: 16;
-$font-medium: 25px;
+$font-small: 12px;
+$font-medium-regular: 18px;
+$font-medium: 23px;
 $font-medium-large: 29px;
-@import url(//db.onlinewebfonts.com/c/07bf042b884e563aa8f7a9062bfc8834?family=Neutraface+2+Text+Bold);
-$font-primary: "Neutraface2 Text";//, sans-serif; !!!!!!!!!!!!!!!!!!!!!!!!!!!
-// $font-weight-semibold: 600;
-$font-secondary: 'Droid Serif';//, sans-serif; !!!!!!!!!!!!!!!!!!!!!!!!!!!
+$font-title: 'Josefin Sans', sans-serif;
+$font-author:'Noto Serif', serif;
+$font-data:  'Open Sans', sans-serif; 
+$font-secondary: 'Source Sans 3', sans-serif;
 $font-weight-regular: 400;
-// $font-weight-bold: 700;
-// $font-terciary: 'Merriweather', serif;
+$font-weight-bold: 700;
 
-// breakpoints
+//BREAKPOINTS
 $web: 768px;
