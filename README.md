@@ -10,7 +10,13 @@ Necesitamos desarrollar una Single Page Application (SPA) que muestre la informa
 En el momento del desarrollo de la aplicación cliente, el API no se encuentra desarrollada, por
 lo que esta incluida una api mock que simula el comportamiento de la API.
 
-Para arrancar la api mock simplemente ejecutar:
+Para arrancar la api mock simplemente:
+
+- Instalar Mockserver globalmente; o como un modulo NPM:
+
+`npm install mockserver`
+
+- Ejecutar:
 
 `npm run mocks`
 
