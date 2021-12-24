@@ -10,9 +10,13 @@ Necesitamos desarrollar una Single Page Application (SPA) que muestre la informa
 En el momento del desarrollo de la aplicación cliente, el API no se encuentra desarrollada, por
 lo que esta incluida una api mock que simula el comportamiento de la API.
 
+Para instalar las dependencias del proyecto:
+
+`npm install`
+
 Para arrancar la api mock simplemente:
 
-- Instalar Mockserver globalmente; o como un modulo NPM:
+- Instalar Mockserver globalmente; o como un módulo NPM:
 
 `npm install mockserver`
 
@@ -22,43 +26,9 @@ Para arrancar la api mock simplemente:
 
 `npm start`
 
-
 ## Endpoints
 
 ### `GET http://localhost:3100/images`
-```json
-[
-  {
-    "type": "Image",
-    "id": 2,
-    "title": "Train in India-Agra",
-    "author": "SamyRoad",
-    "created_at": "2012-12-12T21: 08: 20Z",
-    "main_attachment": {
-      "big": "http://lorempixel.com/400/500/",
-      "small": "http://lorempixel.com/100/125/"
-    },
-    "likes_count": 5,
-    "liked": true,
-    "links": [
-      {
-        "rel": "avatar",
-        "uri": "http://lorempixel.com/250/250/",
-        "methods": "GET"
-      },
-      {
-        "rel": "like",
-        "uri": "http://localhost:3100/images/2/likes",
-        "methods": "POST"
-      }
-    ]
-  },
-  ...
-]
-```
-
-Se puede utilizar los query params `search` y `page` para simular la busqueda y paginación.
-
 
 ### `POST http://localhost:3100/images/:id/likes`
 

@@ -18,15 +18,24 @@ const App = () => {
   };
 
   const handleLikes = (id) => {
-    let newProductsArray= [...products]; // copying the old datas array
+    fetch(`http://localhost:3100/images/${id}}/likes`, {
+      method: "post",
+      body: JSON.stringify()
+      })
+    .then(response => response.ok ? updateLikes(id): alert("Your like could not be sent"))
+  };
+  
+  const updateLikes = (id) => {
+    let newProductsArray= [...products]; 
     let productIndex = newProductsArray.findIndex(pr=> pr.id===id);
     let productModified = newProductsArray.find(pr=> pr.id===id);
     productModified.liked ===false ? productModified.likes_count=productModified.likes_count+1: productModified.likes_count=productModified.likes_count-1;
     productModified.liked=!productModified.liked;
     newProductsArray[productIndex]=productModified;
     setProducts(newProductsArray);
-  };
-  
+  }
+
+
   const renderFilteredProducts = () => {
     return products
       .filter((product) => {
