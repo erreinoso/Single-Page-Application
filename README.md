@@ -54,3 +54,6 @@ Se valorarán los siguientes puntos:
 - Usar “BEM methodology”.
 - El uso de algún “package manager”.
 - El uso de algún “task manager”.
+
+---- Pendiente a mejorar:
+Si el fetch no trae datos, no mostrar
