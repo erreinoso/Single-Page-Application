@@ -29,8 +29,11 @@ const App = () => {
     let newProductsArray= [...products]; 
     let productIndex = newProductsArray.findIndex(pr=> pr.id===id);
     let productModified = newProductsArray.find(pr=> pr.id===id);
-    productModified.liked ===false ? productModified.likes_count=productModified.likes_count+1: productModified.likes_count=productModified.likes_count-1;
+    
     productModified.liked=!productModified.liked;
+
+    productModified.liked ? productModified.likes_count++ : productModified.likes_count--; //Thanks for the tip, Pedro & Aleksei.
+
     newProductsArray[productIndex]=productModified;
     setProducts(newProductsArray);
   }
